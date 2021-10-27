@@ -1,22 +1,22 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 // useEffect here for something
-import { capitalizeFirstLetter } from '../../utils/helpers';
+// import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {
-    const tabOptions = ['about me','portfolio', 'contact', 'resume']
+function Nav(props) {
+    const {selection} = props;
 
-    useEffect(() => {
-        document.title = capitalizeFirstLetter(tabOptions)
-    })
+    // useEffect(() => {
+    //     document.title = capitalizeFirstLetter(tabOptions)
+    // })
 
     return(
         <header>
             <h2>George</h2>
 
             <nav>
-                <ul>
-                    {tabOptions.map((tab) => (
-                        <li key={tab}>
+                <ul className='flex-row'>
+                    {selection.map((tab) => (
+                        <li className='mx-2 navActive' key={tab}>
                             <a href={`#${tab}`} >
                                 {/* <span onClick={() => {
 
