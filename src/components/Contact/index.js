@@ -5,7 +5,7 @@ function Contact() {
     // clear inputs
     const [formState, setFormState] = useState({ name: '', email:'', message: ''});
     // destructure from useState
-    const [name, email, message] = formState;
+    const {name, email, message} = formState;
     // create error message for invalid inputs
     const [errorMessage, setErrorMessage] = useState('')
 
