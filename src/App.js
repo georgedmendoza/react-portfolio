@@ -1,12 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header'
+// import Header from './components/Header';
+import Nav from './components/Nav';
 
 function App() {
   return (
     <div>
+      <Nav></Nav>
       <main>
-        <Header></Header>
+        {/* <Header></Header> */}
       </main>
     </div>
   );
