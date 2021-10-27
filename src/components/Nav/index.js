@@ -3,7 +3,8 @@ import React from 'react';
 // import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-    const {tab} = props;
+    const tab = ['About me','Portfolio','Contact','Resume']
+    const {setCurrentTab} = props;
 
     // useEffect(() => {
     //     document.title = capitalizeFirstLetter(tabOptions)
@@ -17,10 +18,9 @@ function Nav(props) {
                 <ul className='flex-row'>
                     {tab.map((selection) => (
                         <li className='mx-2 navActive' key={tab}>
-                            <a href={`#${selection}`} >
-                                {/* <span onClick={() => {
-
-                                }}></span> */}
+                            <a href={`#${selection}`} 
+                                    onClick={() => setCurrentTab(tab)}>
+                                {/* <span ></span> */}
                                 {selection}
                             </a>
                         </li>

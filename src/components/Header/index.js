@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import coverImage from '../../assets/cover/background.png'
 import Nav from '../Nav';
 import About from '../About';
+import Contact from '../Contact';
 
 function Header() {
     // to change what page is being viewed
@@ -11,8 +12,8 @@ function Header() {
             return <About></About>;
             // case 'Portfolio':
             // return <Portfolio></Portfolio>;
-            // case 'Contact':
-            // return <Contact></Contact>;
+            case 'Contact':
+            return <Contact></Contact>;
             // case 'Resume':
             // return <Resume></Resume>
             default:
@@ -21,17 +22,17 @@ function Header() {
 
     }
 
-    const [tab] = useState(['About me','Portfolio','Contact','Resume']);
+    // const [tab] = useState(['About me','Portfolio','Contact','Resume']);
 
-    // what is selected 
-    const [currentTab, setCurrentTab] = useState(tab[0])
+    // what is selected , currently at About me
+    const [currentTab, setCurrentTab] = useState('About me')
     // determine what will be siplayed
     // const [contactSelected, setContactSelected] = useState(false);
 
     return(
         <section>
             <Nav
-                tab={tab}
+                // tab={tab}
                 setCurrentTab={setCurrentTab}
                 currentTab={currentTab}
             ></Nav>

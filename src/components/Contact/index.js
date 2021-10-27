@@ -10,7 +10,28 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState('')
 
     function handleChange(e) {
-        // if(e.target.name === 'email')
+        // check if email is valid 
+        if(e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value)
+            console.log(isValid)
+            if (!isValid) {         // if email is false-not valid
+                setErrorMessage('You email is invalid')
+            } else {
+                setErrorMessage('')
+            }
+        } else {
+            // check to see if ther is an input for message and/or name
+            if(!e.target.value.length) {
+                setErrorMessage(`${e.target.name} is required`)
+            } else {
+                setErrorMessage('')
+            }
+        }
+
+        if(!errorMessage){
+            // ... is used to retain the other key-value pairs in the object 
+            setFormState({...formState, [e.target.name]: e.target.value})
+        }
     }
 
     function handleSubmit(e) {
@@ -33,7 +54,7 @@ function Contact() {
                     </div>
                     <div>
                         <label htmlFor='Message'>Message:</label>
-                        <input type='message' name='message' defaultValue={message} onBlur={handleChange} />
+                        <textarea type='message' name='message' defaultValue={message} onBlur={handleChange} />
                     </div>
                     {/* displays message when input is invalid */}
                     {errorMessage && (
