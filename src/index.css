@@ -1,4 +1,4 @@
-
+/* 
 main {
 	margin: 0 auto;
 	max-width: 90%;
@@ -146,17 +146,6 @@ input:focus {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
 
-li {
-  list-style: none;
-}
-
-nav a:hover {
-  text-decoration: none;
-}
-
-nav  li {
-  cursor: pointer;
-}
 
 textarea {
 	width: 600px;
@@ -292,4 +281,51 @@ a {
 
 .navActive {
   color: var(--secondary);
+} */
+
+.icon:hover{
+  color:red;
+  font-weight: bold;
+  text-decoration: none;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav  li {
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav  li {
+  cursor: pointer;
+}
+
+.tab{
+  text-decoration: none;
+}
+
+.navigation{
+  background: black;
+  
+}
+
+.hi{
+  background: black;
 }

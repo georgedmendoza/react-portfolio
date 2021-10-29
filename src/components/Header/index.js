@@ -4,6 +4,8 @@ import Nav from '../Nav';
 import About from '../About';
 import Contact from '../Contact';
 import Project from '../Project';
+import Resume from '../Resume';
+import Footer from '../Footer';
 
 function Header() {
     // const tab = useState(['About me','Portfolio','Contact','Resume']);
@@ -12,7 +14,7 @@ function Header() {
     // determine what will be siplayed
     const [contactSelected, setContactSelected] = useState(false);
 
-    const tabs = ['About me', 'Portfolio', 'Contact'];
+    const tabs = ['About me', 'Portfolio', 'Contact', 'Resume'];
 
     // to change what page is being viewed
     const renderSwitch = () =>{
@@ -24,8 +26,8 @@ function Header() {
                 return <Project></Project>;
             case 'Contact':
                 return <Contact></Contact>;
-            // case 'Resume':
-            // return <Resume></Resume>
+            case 'Resume':
+            return <Resume></Resume>
             default:
                 return <About></About>;
         }
@@ -45,7 +47,7 @@ function Header() {
             <div>
                 { renderSwitch() }
             </div>
-            
+            <Footer></Footer>
         </section>
     )
 }
