@@ -6,24 +6,27 @@ import {  faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-i
 
 function Footer() {
     return(
-        <div className='container-fluid'>
-            {/* <div className='container-fluid'> */}
+    <div className='icon-container'>
+        <div className='row'>
+            <div className='col-lg-3 col-md-12'>
                 {/* flex flex-col items-center justify-center min-h-screen py-2 */}
-                <a href='https://github.com/georgedmendoza' target = "_blank" >
+                <a href='https://github.com/georgedmendoza' > 
+                {/* add target = "_blank" later */}
                     <FontAwesomeIcon icon={faGithub} className='icon'></FontAwesomeIcon>
                 </a>
-            {/* </div> */}
-            {/* <div className=''> */}
-                <a href='https://www.linkedin.com/in/george-mendoza-31289b171/' target = "_blank" >
-                    <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+            </div>
+            <div className='col-lg-3 col-md-12'>
+                <a href='https://www.linkedin.com/in/george-mendoza-31289b171/'  >
+                    <FontAwesomeIcon icon={faLinkedin} className='icon'></FontAwesomeIcon>
                 </a>
-            {/* </div> */}
-            {/* <div className=''> */}
-                <a href='https://twitter.com/13_Georgee' target = "_blank" >
-                    <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+            </div>
+            <div className='col-lg-3 col-md-12'>
+                <a href='https://twitter.com/13_Georgee'  >
+                    <FontAwesomeIcon icon={faTwitter} className='icon'></FontAwesomeIcon>
                 </a>
-            {/* </div> */}
+            </div>
         </div>
+    </div>
 
     )
 }

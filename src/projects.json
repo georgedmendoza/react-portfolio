@@ -1,0 +1,40 @@
+[
+    {
+        "id": 1,
+        "image": "require('./assets/cover/this-that.png')",
+        "name":"this-that",
+        "description": "A social bracket that lets people choose options",
+        "code": "code here",
+        "link": "live link here"
+    },
+    {
+        "id": 2,
+        "image": "require('./assets/cover/animal-app.png')",
+        "name":"animal-app",
+        "description": "A social bracket that lets people choose options"
+    },
+    {
+        "id": 3,
+        "image": "require('./assets/cover/note-taker.png')",
+        "name":"note-taker",
+        "description": "A social bracket that lets people choose options"
+    },
+    {
+        "id": 4,
+        "image": "require('./assets/cover/employee-tracker.png')",
+        "name":"employee-tracker",
+        "description": "A social bracket that lets people choose options"
+    },
+    {
+        "id": 5,
+        "image": "require('./assets/cover/tech-blog.png')",
+        "name":"tech-blog",
+        "description": "A social bracket that lets people choose options"
+    },
+    {
+        "id": 6,
+        "image": "require('./assets/cover/work-day-scheduler')",
+        "name":"work-day-scheduler",
+        "description": "A social bracket that lets people choose options"
+    }
+]

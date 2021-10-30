@@ -5,7 +5,7 @@ import About from '../About';
 import Contact from '../Contact';
 import Project from '../Project';
 import Resume from '../Resume';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 function Header() {
     // const tab = useState(['About me','Portfolio','Contact','Resume']);
@@ -35,7 +35,7 @@ function Header() {
     }
 
     return(
-        <section>
+        <section className='d-flex flex-column'>
             <Nav
                 // tab={tab}
                 setCurrentTab={setCurrentTab}
@@ -47,7 +47,7 @@ function Header() {
             <div>
                 { renderSwitch() }
             </div>
-            <Footer></Footer>
+            
         </section>
     )
 }

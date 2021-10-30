@@ -283,11 +283,37 @@ a {
   color: var(--secondary);
 } */
 
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 18px;
+  letter-spacing: .1em;
+  color: var(--light);
+  font-family: 'Poiret One', cursive;
+
+}
+
 .icon:hover{
-  color:red;
+  color:black;
   font-weight: bold;
   text-decoration: none;
 }
+
+.icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -328,4 +354,34 @@ nav  li {
 
 .hi{
   background: black;
+}
+
+.project:hover{
+  background: red;
+}
+
+.img-wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img-des {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .img-des {
+  visibility: visible;
+  opacity: 1;
 }
