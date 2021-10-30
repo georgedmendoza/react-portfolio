@@ -12,7 +12,7 @@ function Resume() {
                 be downloaded with the icon below
             </div>
             <a href={require(`../../assets/file/George-Mendoza-Resume.pdf`).default} download>
-                <FontAwesomeIcon icon={faDownload} ></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faDownload} className='resume-icon'></FontAwesomeIcon>
             </a>
             <div>
                 <h2>Front-End Proficiencies</h2>

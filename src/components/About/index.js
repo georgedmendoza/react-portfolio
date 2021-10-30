@@ -1,9 +1,14 @@
 import React from 'react';
+import BackgroundEffect from '../Particles';
 // import coverImage from '../../assets/cover/background.png';
 
 function About() {
     return(
-        <section>
+        
+        <section className='resume'>
+            <blockquote className="blockquote">
+                <p>"Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning"</p>
+            </blockquote>
             <h1>About me</h1>
             <p> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
@@ -13,6 +18,8 @@ function About() {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat 
             nulla pariatur.
             </p>
+
+            {/* <BackgroundEffect></BackgroundEffect> */}
         </section>
     );
 }

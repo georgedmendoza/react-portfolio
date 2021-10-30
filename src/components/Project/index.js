@@ -22,9 +22,9 @@ function Project() {
                                 className="img-project"
                                 key={proj.id}
                             />
-                            {/* <a href={proj.code} target="_blank" className='img-des'> <FontAwesomeIcon icon={faGithub} className='project-icon1'></FontAwesomeIcon></a> */}
+                            <a href={proj.code} target="_blank" className='img-des'> <FontAwesomeIcon icon={faGithub} className='project-icon1'></FontAwesomeIcon></a>
                             {/* <a href={proj.link} target="_blank" className='img-des'> <FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon></a> */}
-                            <h4 className='proj-title'>{proj.name}</h4>
+                            {/* <h4 className='img-des'>{proj.name}</h4> */}
                             {/* <p className='proj-description'>{proj.description}</p> */}
                         </div>
                         

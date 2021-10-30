@@ -162,9 +162,7 @@ a {
 	
 }
 
-.navActive {
-  color: var(--secondary);
-} */
+ */
 
 *{
   margin: 0;
@@ -215,6 +213,9 @@ body {
   overflow: hidden;
 }
 
+blockquote p{
+  font-size: small;
+}
 
 .flex-row {
   display: flex;
@@ -251,7 +252,9 @@ nav  li {
 
 .navigation{
   background: black;
-  
+}
+.navActive {
+  color: var(--secondary);
 }
 
 .hi{
@@ -262,12 +265,23 @@ nav  li {
   background: red;
 }
 
-.img-wrap {
+/* .img-wrap {
   position: relative;
-  /* height: 200px; */
-  /* width: 257px; */
-   /* transition effect. not necessary */
-   transition: opacity .2s, visibility .2s;
+  transition: all .3s, ease-in-out;
+} */
+
+.img-wrap{
+  position: relative;
+  display: block;
+  /* width: 320px; */
+  /* height: 320px; */
+  /* background: #000; */
+  /* background: url('image.jpg'); */
+  /* background-size: cover; */
+  margin: 120px auto;
+  border-radius: 32px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
 }
 
 .img-des {
@@ -276,29 +290,25 @@ nav  li {
   bottom: 0;
   left: 0;
   right: 0;
-  /* background: rgba(29, 106, 154, 0.72); */
+  background: rgba(29, 106, 154, 0.72);
   color: #fff;
   visibility: hidden;
   opacity: 0;
   height: 100%;
   width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.img-wrap .img-des {
+.img-wrap:hover .img-des {
   visibility: visible;
   opacity: 1;
 }
 
 .new-img{
   height: 20rem;
-  /* border-bottom: 2px solid black;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black; */
-  border: 5px solid black;
+  border: 2px solid black;
   margin: 1rem auto 4rem;
 }
 
@@ -307,12 +317,6 @@ nav  li {
   justify-content: center;
   align-items: center;
 }
-
-/* .proj-description{
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
-} */
 
 .img-project{
   max-height: 100%;
@@ -334,13 +338,19 @@ nav  li {
 }
 
 .contact{
-  max-width: 90%;
-  margin: 10% auto;
+  max-width: 50%;
+  margin: 5% auto;
 }
 
 .resume{
   text-align: center;
+  margin: 2% 4%;
 }
+
+.resume-icon{
+  margin: 2% auto;
+}
+
 
 @media (max-width: 768px) {
   .new-img{
