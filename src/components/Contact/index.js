@@ -40,30 +40,30 @@ function Contact() {
     }
 
     return(
-        <section>
+        <section className='contact'>
             <h1>Contact me</h1>
-                <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
+                <div className='mb-3'>
+                    {/* onBlur- display message when field doesn't have focus */}
+                    <label className='form-label' htmlFor='name'>Name:</label>
+                    <input className='form-control' type='text' name='name' defaultValue={name} onBlur={handleChange} />
+                </div>
+                <div className='mb-3'>
+                    <label className='form-label' htmlFor='email'>Email Address:</label>
+                    <input className='form-control' type='email' name='email' defaultValue={email} onBlur={handleChange} />
+                </div>
+                <div className='mb-3'>
+                    <label className='form-label' htmlFor='Message'>Message:</label>
+                    <textarea className='form-control' type='message' name='message' defaultValue={message} onBlur={handleChange} />
+                </div>
+                {/* displays message when input is invalid */}
+                {errorMessage && (
                     <div>
-                        {/* onBlur- display message when field doesn't have focus */}
-                        <label htmlFor='name'>Name:</label>
-                        <input type='text' name='name' defaultValue={name} onBlur={handleChange} />
+                        <p className='error-text'>{errorMessage}</p>
                     </div>
-                    <div>
-                        <label htmlFor='email'>Email Address:</label>
-                        <input type='email' name='email' defaultValue={email} onBlur={handleChange} />
-                    </div>
-                    <div>
-                        <label htmlFor='Message'>Message:</label>
-                        <textarea type='message' name='message' defaultValue={message} onBlur={handleChange} />
-                    </div>
-                    {/* displays message when input is invalid */}
-                    {errorMessage && (
-                        <div>
-                            <p className='error-text'>{errorMessage}</p>
-                        </div>
-                    )}
-                    <button className='btn btn-danger' type='submit'>Submit</button>
-                </form>
+                )}
+                <button className='btn btn-primary' type='submit'>Submit</button>
+            </form>
 
         </section>
     );

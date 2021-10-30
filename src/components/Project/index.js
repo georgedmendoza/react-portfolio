@@ -1,11 +1,13 @@
 import React from 'react';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-// import {  faGithub } from '@fortawesome/free-brands-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {  faGithub, faStaylinked } from '@fortawesome/free-brands-svg-icons';
 import projects from '../../projects.json'
 
 function Project() {
+    console.log(projects[0].code)
     // look into FriendCard in activity 4
     return(
+       
         // create loop to loop over the images
         <div className=' '>
             <div className='container mt-auto'>
@@ -13,17 +15,21 @@ function Project() {
                     <div className='flex-row'>
                       {projects.map((proj, i) => (
                         <div className='img-wrap col-md-5 new-img'>
+                            
                             <img 
                                 src={require(`../../assets/cover/${proj.name}.png`).default}
                                 alt={proj.name}
-                                className=" img-project"
+                                className="img-project"
                                 key={proj.id}
                             />
-                            <p className='img-des project-icon'>Some description here</p>
+                            {/* <a href={proj.code} target="_blank" className='img-des'> <FontAwesomeIcon icon={faGithub} className='project-icon1'></FontAwesomeIcon></a> */}
+                            {/* <a href={proj.link} target="_blank" className='img-des'> <FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon></a> */}
+                            <h4 className='proj-title'>{proj.name}</h4>
+                            {/* <p className='proj-description'>{proj.description}</p> */}
                         </div>
-                      ))}  
+                        
+                      ))} 
                     </div>
-                
                 </div>
             </div>
         </div>
