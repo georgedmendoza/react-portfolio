@@ -362,8 +362,10 @@ nav  li {
 
 .img-wrap {
   position: relative;
-  height: 200px;
-  width: 257px;
+  /* height: 200px; */
+  /* width: 257px; */
+   /* transition effect. not necessary */
+   transition: opacity .2s, visibility .2s;
 }
 
 .img-des {
@@ -376,12 +378,25 @@ nav  li {
   color: #fff;
   visibility: hidden;
   opacity: 0;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+  height: 100%;
+  width: 100%;
+ 
 }
 
 .img-wrap:hover .img-des {
   visibility: visible;
   opacity: 1;
+  
+}
+
+.new-img{
+  height: 18rem;
+  border: 5px solid black;
+}
+
+.img-project{
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }

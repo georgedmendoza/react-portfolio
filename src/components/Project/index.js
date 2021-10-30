@@ -1,6 +1,6 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {  faGithub } from '@fortawesome/free-brands-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {  faGithub } from '@fortawesome/free-brands-svg-icons';
 import projects from '../../projects.json'
 
 function Project() {
@@ -8,15 +8,16 @@ function Project() {
     return(
         // create loop to loop over the images
         <div className=' '>
-            <div className='container mt-4'>
+            <div className='container mt-auto'>
                 <div className='row'>
-                    <div className='col-lg-4, col-md-6'>
-                      {projects.map((proj,i) => (
-                        <div className='mb-5 img-wrap'>
+                    <div className='flex-row'>
+                      {projects.map((proj, i) => (
+                        <div className='img-wrap col-md-5 new-img'>
                             <img 
                                 src={require(`../../assets/cover/${proj.name}.png`).default}
                                 alt={proj.name}
-                                className="img-fluid thumbnail img-project"
+                                className=" img-project"
+                                key={proj.id}
                             />
                             <p className='img-des project-icon'>Some description here</p>
                         </div>
