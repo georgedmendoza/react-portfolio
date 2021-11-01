@@ -14,19 +14,41 @@ function Project() {
                 <div className='row'>
                     <div className='flex-row'>
                       {projects.map((proj, i) => (
-                        <div className='img-wrap col-md-5 new-img'>
-                            
+                        // <div className='img-wrap col-md-5 new-img'>
+                        <div className='card__collection clear-fix col-md-5 new-img'>
+                            <div className='cards cards--three'>
                             <img 
                                 src={require(`../../assets/cover/${proj.name}.png`).default}
                                 alt={proj.name}
-                                className="img-project"
+                                className="img-responsive"
                                 key={proj.id}
                             />
-                            <a href={proj.code} target="_blank" className='img-des'> <FontAwesomeIcon icon={faGithub} className='project-icon1'></FontAwesomeIcon></a>
-                            {/* <a href={proj.link} target="_blank" className='img-des'> <FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon></a> */}
-                            {/* <h4 className='img-des'>{proj.name}</h4> */}
-                            {/* <p className='proj-description'>{proj.description}</p> */}
+                            <span className='cards--three__rect-1'>
+                                <span className="shadow-1">{proj.name}</span>
+                                <p>Hello</p>
+                            </span>
+                            <span className="cards--three__rect-2">
+                                <span className="shadow-2"></span>
+                            </span>
+                            <span className="cards--three__circle"></span>
+                            <ul className="cards--three__list">
+                                <li><FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon> </li>
+                                <li><FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon> </li>
+                                <li><FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon> </li>
+                            </ul>
+                            </div>
                         </div>
+                            // <img 
+                            //     src={require(`../../assets/cover/${proj.name}.png`).default}
+                            //     alt={proj.name}
+                            //     className="img-project"
+                            //     key={proj.id}
+                            // />
+                            // <a href={proj.code} target="_blank" className='img-des'> <FontAwesomeIcon icon={faGithub} className='project-icon1'></FontAwesomeIcon></a>
+                            // {/* <a href={proj.link} target="_blank" className='img-des'> <FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon></a> */}
+                            // {/* <h4 className='img-des'>{proj.name}</h4> */}
+                            // {/* <p className='proj-description'>{proj.description}</p> */}
+                        // </div>
                         
                       ))} 
                     </div>

@@ -14,6 +14,7 @@ function Nav(props) {
     // useEffect(() => {
     //     document.title = capitalizeFirstLetter(tabOptions)
     // })
+    
 
     return(
     
