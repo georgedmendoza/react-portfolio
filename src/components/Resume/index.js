@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {   } from '@fortawesome/free-brands-svg-icons';
-import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 function Resume() {
     return(
@@ -11,8 +11,9 @@ function Resume() {
                 Here are some of the skills that I have developed over time, my resume can 
                 be downloaded with the icon below
             </div>
-            <a href={require(`../../assets/file/George-Mendoza-Resume.pdf`).default} download>
-                <FontAwesomeIcon icon={faDownload} className='resume-icon'></FontAwesomeIcon>
+            <a href={require(`../../assets/file/George-Mendoza-Resume.pdf`).default} download 
+                title='Resume'>
+                <FontAwesomeIcon icon={faDownload} className='resume-icon fa-2x'></FontAwesomeIcon>
             </a>
             <div>
                 <h2>Front-End Proficiencies</h2>

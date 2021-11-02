@@ -22,8 +22,15 @@ body {
   font-family: 'Poiret One', cursive;
 }
 
-.icon{
-  color: white;
+.avatar{
+  width: 8rem;
+  height: 10rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.icon {
+  color: black;
   /* size: 20rem; */
 }
 
@@ -52,11 +59,6 @@ body {
   /* background: chartreuse; */
 }
 
-.icon:hover{
-  color:black;
-  font-weight: bold;
-  text-decoration: none;
-}
 
 .icon-container{
   display: flex;
@@ -94,7 +96,7 @@ nav a:hover {
   text-decoration: none;
 }
 
-nav  li {
+nav li {
   cursor: pointer;
 }
 
@@ -107,8 +109,8 @@ nav a:hover {
   text-decoration: none;
 }
 
-nav  li {
-  cursor: pointer;
+.nav {
+  margin-bottom: 5%;
 }
 
 .tab{
@@ -130,50 +132,15 @@ nav  li {
   background: red;
 }
 
-/* .img-wrap {
-  position: relative;
-  transition: all .3s, ease-in-out;
-} */
 
-/* .img-wrap{
-  position: relative;
-  display: block;
-  background: #000;
-  margin: 120px auto;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-}
 
-.img-des {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(29, 106, 154, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img-wrap:hover .img-des {
-  visibility: visible;
-  opacity: 1;
-} */
-
-@import "https://fonts.googleapis.com/css?family=Do+Hyeon";
-*,
+/* 
 *:before,
 *:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 .clear-fix:after {
   display: block;
@@ -552,6 +519,13 @@ nav  li {
 
 .resume-icon{
   margin: 2% auto;
+  color: black;
+}
+
+.icon:hover, .resume-icon:hover{
+  color:lightblue;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 

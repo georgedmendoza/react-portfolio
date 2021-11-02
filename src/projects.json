@@ -3,7 +3,7 @@
         "id": 1,
         "image": "require('./assets/cover/this-that.png')",
         "name":"this-that",
-        "technologies": "tech here",
+        "technologies": "JS, Express, MySQL, Node",
         "description": "A social bracket that lets people choose options",
         "code": "https://github.com/bgswilde/thisthat",
         "link": "https://this--that.herokuapp.com/"
@@ -12,16 +12,16 @@
         "id": 2,
         "image": "require('./assets/cover/animal-app.png')",
         "name":"animal-app",
-        "technologies": "tech here",
+        "technologies": "JS, HTML, CSS, Bulma",
         "description": "A social bracket that lets people choose options",
-        "code": "https://ratalla816.github.io/animal-app/",
+        "code": "https://github.com/ratalla816/animal-app",
         "link": "https://cryptic-lowlands-80543.herokuapp.com/"
     },
     {
         "id": 3,
         "image": "require('./assets/cover/note-taker.png')",
         "name":"note-taker",
-        "technologies": "tech here",
+        "technologies": "JS, Express, Node, Rest API",
         "description": "A social bracket that lets people choose options",
         "code": "https://github.com/georgedmendoza/note-taker",
         "link": "https://cryptic-lowlands-80543.herokuapp.com/"
@@ -30,7 +30,7 @@
         "id": 4,
         "image": "require('./assets/cover/budget-tracker.png')",
         "name":"budget-tracker",
-        "technologies": "tech here",
+        "technologies": "JS, Express, Mongoose, Node, Morgan",
         "description": "A social bracket that lets people choose options",
         "code": "https://github.com/georgedmendoza/budget-tracker",
         "link": "https://budget1--tracker.herokuapp.com/"
@@ -39,7 +39,7 @@
         "id": 5,
         "image": "require('./assets/cover/tech-blog.png')",
         "name":"tech-blog",
-        "technologies": "tech here",
+        "technologies": "JS, MySQl2, Sequelize, Express",
         "description": "A social bracket that lets people choose options",
         "code": "https://github.com/georgedmendoza/tech-blog",
         "link": "https://immense-headland-57964.herokuapp.com/" 
@@ -48,9 +48,9 @@
         "id": 6,
         "image": "require('./assets/cover/work-day-scheduler')",
         "name":"work-day-scheduler",
-        "technologies": "tech here",
+        "technologies": "jQuery, HTML, CSS, Moment",
         "description": "A social bracket that lets people choose options",
-        "code": "https://georgedmendoza.github.io/work-day-scheduler/",
-        "link": "https://github.com/georgedmendoza/work-day-scheduler"
+        "code": "https://github.com/georgedmendoza/work-day-scheduler",
+        "link": "https://georgedmendoza.github.io/work-day-scheduler/"
     }
 ]

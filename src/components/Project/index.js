@@ -1,6 +1,6 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {  faGithub, faStaylinked } from '@fortawesome/free-brands-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {  faGithub, faStaylinked } from '@fortawesome/free-brands-svg-icons';
 import projects from '../../projects.json'
 
 function Project() {
@@ -12,6 +12,8 @@ function Project() {
         <div className=' '>
             <div className='container mt-auto'>
                 <div className='row'>
+                <h2 className='proj-title'>Projects</h2>
+
                     <div className='flex-row'>
                       {projects.map((proj, i) => (
                         // <div className='img-wrap col-md-5 new-img'>
@@ -34,13 +36,13 @@ function Project() {
                             <ul className="cards--three__list link">
                                 <li className='list'>
                                     <a href={proj.code} target="_blank" 
-                                            className='icon link1'> 
+                                            title='GitHub' className='icon link1'> 
                                         <button type="button" class="btn btn-secondary btn-sm">CODE</button>
                                     </a>      
                                 </li>
                                 <li>
                                     <a href={proj.link} target="_blank" 
-                                        className='icon link2'> 
+                                        title='Live Version' className='icon link2'> 
                                         <button type="button" class="btn btn-secondary btn-sm">DEPLOYED</button>
                                     </a> 
                                 </li>

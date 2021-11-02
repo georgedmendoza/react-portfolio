@@ -41,7 +41,7 @@ function Contact() {
 
     return(
         <section className='contact'>
-            <h1>Contact me</h1>
+            <h1 className='proj-title'>Contact me</h1>
             <form onSubmit={handleSubmit}>
                 <div className='mb-3'>
                     {/* onBlur- display message when field doesn't have focus */}

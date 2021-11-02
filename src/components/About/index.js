@@ -1,6 +1,7 @@
 import React from 'react';
-import BackgroundEffect from '../Particles';
-// import coverImage from '../../assets/cover/background.png';
+// import BackgroundEffect from '../Particles';
+
+import headshot from '../../assets/cover/Headshot.jpg';
 
 function About() {
     return(
@@ -9,6 +10,7 @@ function About() {
             <blockquote className="blockquote">
                 <p>"Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning"</p>
             </blockquote>
+            <img src={headshot} className='avatar'/>
             <h1>About me</h1>
             <p> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 

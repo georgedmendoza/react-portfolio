@@ -6,7 +6,7 @@ import 'react-bootstrap';
 function Nav(props) {
     const {
         // tab = [],
-        // currentTab,
+        currentTab,
         setCurrentTab,
         tabs
     } = props;
@@ -20,13 +20,12 @@ function Nav(props) {
     
 
         <div className='fluid-container'>
-            <nav className='navbar navbar-dark bg-dark'>
-                <div className='container-fluid'>
+            <nav className={`navbar navbar-dark bg-dark nav`}>
+                <div className='container-fluid' aria-current="page">
                     {tabs.map((selection) => (
                         <li className='' key={selection}>
                             <a href={`#${selection}`} 
                                     onClick={() => setCurrentTab(selection)}
-  
                                className='navbar-brand'
                                 >
                                 {selection}
