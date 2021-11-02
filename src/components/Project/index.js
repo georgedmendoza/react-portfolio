@@ -15,7 +15,7 @@ function Project() {
                     <div className='flex-row'>
                       {projects.map((proj, i) => (
                         // <div className='img-wrap col-md-5 new-img'>
-                        <div className='card__collection clear-fix col-md-5 new-img'>
+                        <div className='card__collection clear-fix new-img'>
                             <div className='cards cards--three'>
                             <img 
                                 src={require(`../../assets/cover/${proj.name}.png`).default}
@@ -24,17 +24,26 @@ function Project() {
                                 key={proj.id}
                             />
                             <span className='cards--three__rect-1'>
-                                <span className="shadow-1">{proj.name}</span>
-                                <p>Hello</p>
+                                <span className="shadow-1">{proj.technologies}</span>
+                                <p>{proj.name}</p>
                             </span>
                             <span className="cards--three__rect-2">
                                 <span className="shadow-2"></span>
                             </span>
                             <span className="cards--three__circle"></span>
-                            <ul className="cards--three__list">
-                                <li><FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon> </li>
-                                <li><FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon> </li>
-                                <li><FontAwesomeIcon icon={faStaylinked} className='project-icon2 icon'></FontAwesomeIcon> </li>
+                            <ul className="cards--three__list link">
+                                <li className='list'>
+                                    <a href={proj.code} target="_blank" 
+                                            className='icon link1'> 
+                                        <button type="button" class="btn btn-secondary btn-sm">CODE</button>
+                                    </a>      
+                                </li>
+                                <li>
+                                    <a href={proj.link} target="_blank" 
+                                        className='icon link2'> 
+                                        <button type="button" class="btn btn-secondary btn-sm">DEPLOYED</button>
+                                    </a> 
+                                </li>
                             </ul>
                             </div>
                         </div>
