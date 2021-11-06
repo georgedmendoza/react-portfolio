@@ -7,7 +7,7 @@
 
    This application can be found at the following link.
    
-   https://immense-headland-57964.herokuapp.com/
+   REPLACE LINK HERE
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
@@ -27,7 +27,8 @@
   ## Usage 
   Start the application by calling the file npm start in either Terminal or GitBash. From there the user can view the following sections: about me, projects, contact, resume. Each of the projects has a link to view the code and live version. User can also leave their info in the contact me if they wish to reach me.
 
-  ![screenshot](./public/images/screenshot.png)
+  ![screenshot](./src/assets/cover/screenshot1.png)
+  ![screenshot](./src/assets/cover/screenshot1=2.png)
   
   ## License
   - This project is under the [MIT](https://opensource.org/licenses/MIT) license. 
