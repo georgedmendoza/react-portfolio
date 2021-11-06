@@ -10,18 +10,18 @@ function Footer() {
         <div className='row'>
             <div className='col-3'>
                 {/* flex flex-col items-center justify-center min-h-screen py-2 */}
-                <a href='https://github.com/georgedmendoza' target="_blank"> 
+                <a href='https://github.com/georgedmendoza' target="_blank" rel='noreferrer'> 
                 {/* add target = "_blank" later */}
                     <FontAwesomeIcon icon={faGithub} className='icon fa-lg'></FontAwesomeIcon>
                 </a>
             </div>
             <div className='col-3'>
-                <a href='https://www.linkedin.com/in/george-mendoza-31289b171/'  target="_blank">
+                <a href='https://www.linkedin.com/in/george-mendoza-31289b171/'  target="_blank" rel='noreferrer'>
                     <FontAwesomeIcon icon={faLinkedin} className='icon fa-lg'></FontAwesomeIcon>
                 </a>
             </div>
             <div className='col-3 '>
-                <a href='https://twitter.com/13_Georgee'  target="_blank">
+                <a href='https://twitter.com/13_Georgee'  target="_blank" rel='noreferrer'>
                     <FontAwesomeIcon icon={faTwitter} className='icon fa-lg'></FontAwesomeIcon>
                 </a>
             </div>

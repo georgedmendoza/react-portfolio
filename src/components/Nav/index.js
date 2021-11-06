@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // useEffect here for something
-// import { capitalizeFirstLetter } from '../../utils/helpers';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 import 'react-bootstrap';
 
 function Nav(props) {
@@ -11,9 +11,9 @@ function Nav(props) {
         tabs
     } = props;
 
-    // useEffect(() => {
-    //     document.title = capitalizeFirstLetter(tabOptions)
-    // })
+    useEffect(() => {
+        document.title = capitalizeFirstLetter(currentTab);
+    }, [currentTab]);
     
 
     return(
@@ -22,17 +22,27 @@ function Nav(props) {
         <div className='fluid-container'>
             <nav className={`navbar navbar-dark bg-dark nav`}>
                 <div className='container-fluid' aria-current="page">
-                    {tabs.map((selection) => (
+                    {tabs.map((selection) => {
+                        console.log(selection)
+                        return (
                         <li className='' key={selection}>
                             <a href={`#${selection}`} 
                                     onClick={() => setCurrentTab(selection)}
-                               className='navbar-brand'
+                               className={`${currentTab === selection ? 'btn btn-light text-dark' : ''}  navbar-brand`}
                                 >
+                                    <span
+                                    onClick={() => {
+                                        setCurrentTab(selection);
+                                    }}
+                                    >
+
+                                    </span>
                                 {selection}
                                 
                             </a>
                         </li>
-                    ))}
+                        )
+                    })}
                 </div>
               
             </nav>

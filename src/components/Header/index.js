@@ -12,7 +12,7 @@ function Header() {
     const [currentTab, setCurrentTab] = useState('About me')
     // what is selected , currently at About me
     // determine what will be siplayed
-    const [contactSelected, setContactSelected] = useState(false);
+    const [contactSelected, setContactSelected] = useState(true);
 
     const tabs = ['About me', 'Portfolio', 'Contact', 'Resume'];
 

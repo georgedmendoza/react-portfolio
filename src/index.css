@@ -539,3 +539,19 @@ nav a:hover {
     min-width: 100%;
   }
 } */
+
+@media (max-width: 509px) {
+  .img-responsive {
+    height: 15rem;
+    width: 20rem;
+    /* height: 20rem; */
+  }
+
+  .new-img{
+    height: 15rem;
+    width: 20rem;
+    border: 2px solid black;
+    margin: 1rem auto 4rem;
+  }
+  
+}

@@ -35,15 +35,15 @@ function Project() {
                             <span className="cards--three__circle"></span>
                             <ul className="cards--three__list link">
                                 <li className='list'>
-                                    <a href={proj.code} target="_blank" 
+                                    <a href={proj.code} target="_blank" rel='noreferrer' 
                                             title='GitHub' className='icon link1'> 
-                                        <button type="button" class="btn btn-secondary btn-sm">CODE</button>
+                                        <button type="button" className="btn btn-secondary btn-sm">CODE</button>
                                     </a>      
                                 </li>
                                 <li>
-                                    <a href={proj.link} target="_blank" 
+                                    <a href={proj.link} target="_blank" rel='noreferrer'
                                         title='Live Version' className='icon link2'> 
-                                        <button type="button" class="btn btn-secondary btn-sm">DEPLOYED</button>
+                                        <button type="button" className="btn btn-secondary btn-sm">DEPLOYED</button>
                                     </a> 
                                 </li>
                             </ul>
