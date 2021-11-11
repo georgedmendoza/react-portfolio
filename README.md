@@ -28,7 +28,7 @@
   Start the application by calling the file npm start in either Terminal or GitBash. From there the user can view the following sections: about me, projects, contact, resume. Each of the projects has a link to view the code and live version. User can also leave their info in the contact me if they wish to reach me.
 
   ![screenshot](./src/assets/cover/screenshot1.png)
-  ![screenshot](./src/assets/cover/screenshot1=2.png)
+  ![screenshot](./src/assets/cover/screenshot2.png)
   
   ## License
   - This project is under the [MIT](https://opensource.org/licenses/MIT) license. 
