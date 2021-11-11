@@ -7,7 +7,7 @@
 
    This application can be found at the following link.
    
-   REPLACE LINK HERE
+   https://georgedmendoza.github.io/react-portfolio/
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
