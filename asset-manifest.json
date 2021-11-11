@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.9f283016.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.3f3870d6.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.3f3870d6.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.fedfbab5.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.fedfbab5.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/react-portfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.c8245c89.chunk.js": "/react-portfolio/static/js/2.c8245c89.chunk.js",
+    "static/js/2.c8245c89.chunk.js.map": "/react-portfolio/static/js/2.c8245c89.chunk.js.map",
+    "static/js/3.8e286011.chunk.js": "/react-portfolio/static/js/3.8e286011.chunk.js",
+    "static/js/3.8e286011.chunk.js.map": "/react-portfolio/static/js/3.8e286011.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/react-portfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.9f283016.chunk.css.map": "/react-portfolio/static/css/main.9f283016.chunk.css.map",
+    "static/js/2.c8245c89.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.c8245c89.chunk.js.LICENSE.txt",
+    "static/media/George-Mendoza-Resume.pdf": "/react-portfolio/static/media/George-Mendoza-Resume.fe9cbe72.pdf",
+    "static/media/Headshot.8be7c9ad.jpg": "/react-portfolio/static/media/Headshot.8be7c9ad.jpg",
+    "static/media/animal-app.png": "/react-portfolio/static/media/animal-app.ce1099ea.png",
+    "static/media/background.png": "/react-portfolio/static/media/background.e1e6ece5.png",
+    "static/media/budget-tracker.png": "/react-portfolio/static/media/budget-tracker.da11c4f9.png",
+    "static/media/employee-tracker.png": "/react-portfolio/static/media/employee-tracker.970a47fc.png",
+    "static/media/note-taker.png": "/react-portfolio/static/media/note-taker.b1dc9ffb.png",
+    "static/media/screenshot1.png": "/react-portfolio/static/media/screenshot1.d50db2ef.png",
+    "static/media/screenshot2.png": "/react-portfolio/static/media/screenshot2.ed2a2f46.png",
+    "static/media/tech-blog.png": "/react-portfolio/static/media/tech-blog.ee32eb7c.png",
+    "static/media/this-that.png": "/react-portfolio/static/media/this-that.cb88cc05.png",
+    "static/media/work-day-scheduler.png": "/react-portfolio/static/media/work-day-scheduler.3e2e61f3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fedfbab5.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.c8245c89.chunk.js",
+    "static/css/main.9f283016.chunk.css",
+    "static/js/main.3f3870d6.chunk.js"
+  ]
+}
